@@ -4,102 +4,87 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script type="text/javascript" src="./js/scriptStyle.js"></script>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <title> Hire me - FullStack Jr</title>
+    <title> Ezequiel - FullStack Jr</title>
 </head>
 
-<body class="light">
-    <header class="header">
-        <button id="backToTop" onclick="backToTop()"><strong>Top</strong></button>
-        <img id="logo" src="./images/logo.png" alt="logo Escmeanything" />
-        <nav id="nav-bar" class="light-nav">
-            <a href="#me" class="nav-link">Me</a>
+<body class="light-body">
+    <main class="container">
+        <nav id="navbar" class="light-nav">
+            <img id="logo" src="./images/logo.png" alt="logo Escmeanything" />
+            <a href="#welcome-section" class="nav-link">Me</a>
             <a href="#projects" class="nav-link">Projetos</a>
             <a href="#skills" class="nav-link">Estudando</a>
-            <button id="btTrans" onclick="darkModeFunction()"><img id="dark-mode" class="icon"
+            <button id="btTrans" class="nav-link" onclick="darkModeFunction()"><img id="dark-mode" class="icon"
                     src="./images/dayNight.svg" alt="Toggle dark mode" value="1"></button>
         </nav>
-    </header>
-    <content>
         <section id="introduction">
-            <p class="text-focus-in"> Professional Portfolio: </p>
-            <h1 class="text-focus-in">'Esc me' anything! </h1>
-            <code class="text-focus-in">String[] firstName = {"Ezequiel","Escobar"};</code>
+            <p class="text-focus-in">Professional Portfolio: </p>
+            <h1 class="text-focus-in">'Esc me' anything!</h1>
+            <code class="text-focus-in">String[ ] firstName = {"Ezequiel","Escobar"};</code>
             <a href="#projects" class="nav-link"><img class="icon heartbeat" src="./images/arrow.svg"
                     alt="Scroll to next section"></a>
         </section>
-        <section class="main-section" id="me">
-            <header class="title">Me</header>
-            <a href="https://github.com/Escowolf" id="profile"><img id="profile-ico"
-                    src="https://avatars.githubusercontent.com/u/63311919?v=4" alt="Picture of Ezequiel"></a>
-            <p class="text-read">Sou acadêmico de Análise e Desenvolvimento de Sistemas e estou em transição de
-                carreira. Tenho conhecimento e interesse na área de desenvolvimento fullstack, desde a criação do
-                protótipo de interface até a conexão com banco de dados e API. Atuo como bibliotecário e tenho
-                experiência em gerenciamento de recursos informacionais de bases de livros digitais, planejamento
-                orçamentário e financeiro e análise de metadados.</p>
+        <section id="welcome-section">
+            <h1 class="title-section">Um pouco sobre</h1>
+            <div class="conteudo">
+                <a href="https://github.com/Escowolf" id="profile-link" target="_blank"><img id="profile-ico"
+                        src="https://avatars.githubusercontent.com/u/63311919?v=4" alt="Picture of Ezequiel"></a>
+                <p class="text-read">Sou acadêmico de Análise e Desenvolvimento de Sistemas e estou em transição de
+                    carreira. Tenho conhecimento e interesse na área de desenvolvimento fullstack, desde a criação do
+                    protótipo de interface até a conexão com banco de dados e API. Atuo como bibliotecário e tenho
+                    experiência em gerenciamento de recursos informacionais de bases de livros digitais, planejamento
+                    orçamentário e financeiro e análise de metadados.</p>
+            </div>
         </section>
         <hr>
         <section class="alternative-section" id="projects">
-            <header class="title">Projetos</header>
-            <div class="projectsPro">
-                <div class="projectsPro-item">
-                    <div class="projectsPro-item-imagem">
-                        <img src="./images/umusic.png">
-                    </div>
-                    <div class="projectsPro-item_info">
-                        <h4>Umusic</h4>
-                        <description>Aplicação web que simula o funcionamento do Spotify. Funcionalidades: realiza
-                            cadastro de usuários, toca músicas, exibe playlists de forma dinâmica.
-                            Utilizado: CSS, HTML, JavaScript, React e Boostrap;
-                        </description>
-                        <a href="https://codesandbox.io/s/pedantic-galileo-ioegu7">Acesse</a>
-                    </div>
+            <h1 class="title-section">Projetos</h1>
+            <div class="projectsDiv">
+                <div class="projectsItem">
+                    <img src="./images/umusic.png" class="project-image">
+                    <h4 class="project-title">Umusic</h4>
+                    <description>Aplicação web que simula o funcionamento do Spotify. Funcionalidades: realiza
+                        cadastro de usuários, toca músicas, exibe playlists de forma dinâmica.
+                        Utilizado: CSS, HTML, JavaScript, React e Boostrap;
+                    </description>
+                    <a href="https://codesandbox.io/s/pedantic-galileo-ioegu7">Acesse</a>
                 </div>
-                <div class="projectsPro-item">
-                    <div class="projectsPro-item-imagem">
-                        <img src="./images/RotaAtiva.png">
-                    </div>
-                    <div class="projectsPro-item_info">
-                        <h4>Rota Ativa</h4>
-                        <description>Aplicação web com melhorias aplicáveis na Zona Azul;
-                            Frameworks utilizados: react e Springboot; Linguagens: javascript e java; Banco: mysql;
-                        </description>
-                        <a href="https://codesandbox.io/p/github/Escowolf/rota-ativa-pads/master">Acesse</a>
-                    </div>
+                <div class="projectsItem">
+                    <img src="./images/RotaAtiva.png" class="project-image">
+                    <h4 class="project-title">Rota Ativa</h4>
+                    <description>Aplicação web com melhorias aplicáveis na Zona Azul;
+                        Frameworks utilizados: react e Springboot; Linguagens: javascript e java; Banco: mysql;
+                    </description>
+                    <a href="https://codesandbox.io/p/github/Escowolf/rota-ativa-pads/master">Acesse</a>
                 </div>
-
-                <div class="projectsPro-item">
-                    <div class="projectsPro-item-imagem">
-                        <img src="./images/github_page.png">
-                    </div>
-                    <div class="projectsPro-item_info">
-                        <h4>GitHub Page</h4>
-                        <p>
-                            Para conhecer mais sobre meus trabalhos e estudos. :)
-                        </p>
-                        <a href="https://github.com/Escowolf">Acesse</a>
-                    </div>
-
+                <div class="projectsItem">
+                    <img src="./images/github_page.png" class="project-image">
+                    <h4 class="project-tile">GitHub Page</h4>
+                    <p>
+                        Para conhecer mais sobre meus trabalhos e estudos. :)
+                    </p>
+                    <a href="https://github.com/Escowolf">Acesse</a>
                 </div>
             </div>
         </section>
         <hr>
         <section class="main-section" id="skills">
-            <header class="title">Estudando</header>
-            <ul class="text-read">
+            <h1 class="title-section">Estudando</h1>
+            <ul class="text-focus-in">
                 <li class="text">API</li>
                 <li class="text">Cloud</li>
                 <li class="text">Java</li>
-                <li class="text">Springboot</li>
+                <li class="text">Spring Boot</li>
                 <li class="text">React</li>
             </ul>
             <code>button</code>
         </section>
-    </content>
+    </main>
 
 </body>
+<footer>
+   <p>Portfolio elaborado utilizando conhecimentos de HTML, CSS, JavaScript, CI/CD.</p></footer>
 
 </html>
